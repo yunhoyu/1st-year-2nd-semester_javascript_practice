@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const rects = document.querySelectorAll('.rect');
+                rects.forEach((rect, index) => {
+                    const width = (index + 1) * 100;
+                    const img = `media/amajon${index+1}.png`; // 이미지 주소가 아니라 배열 방식으로도 해보기 (시험에 그렇게 나옴 ㅇㅇ)
+                    rect.setAttribute('src', img) 
+                })
+            })
+        </script>
+</head>
+<body>
+   
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+</body>
+</html>

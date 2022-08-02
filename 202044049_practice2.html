@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Product (이름,무게,가격){
+            this.이름 = 이름;
+            this.무게 = 무게;
+            this.가격 = 가격;
+            };
+            Product.prototype.Calculate= function(a){
+            console.log(`가격은 ${a/this.무게*this.가격}원입니다.`);
+        };
+        let prod1 = new Product('삼겹살', 100, 1690);
+        console.log(JSON.stringify(prod1,null,2))
+        prod1.Calculate(200);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
